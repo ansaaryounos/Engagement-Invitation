@@ -11,8 +11,8 @@
 }
       
 :root {
-    --cream: #f2f1f0;
-    --creamAlpha: #f2f1f000;
+    --cream: white;
+    --creamAlpha: #ffffff00;
 }
 
 body {
