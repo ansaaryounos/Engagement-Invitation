@@ -3,13 +3,17 @@
     font-style: normal;
     font-weight: normal;
     src: local('Minion Pro Semibold'), url('MinionPro-Semibold.woff') format('woff');
-    }
+}
 
 @font-face {
     font-family: "Signpainter";
-        src: url('fonts/SignPainter.ttc');
-    }
+    src: url('fonts/SignPainter.ttc');
+}
       
+:root {
+    --cream: #f2f1f0;
+    --creamAlpha: #f2f1f000;
+}
 
 body {
     background-color: #87afb9;
@@ -50,7 +54,7 @@ body {
     position: absolute;
     width: 80%;
     height: 3100px;
-    background-color: #f2f1f0;
+    background-color: var(--cream);
     filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
     display: flex;
     align-items: center;
@@ -122,18 +126,23 @@ body {
 
 .m .heart-container .name {
     position: absolute;
+    background: radial-gradient(circle, var(--cream) 60%, var(--creamAlpha) 80%);
     top: 0;
-    width: 220px;
+    width: 200px;
+    height: 200px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .m .heart-container #ansaar-name {
-    transform: translate(-30px, -90px);
+    transform: translate(-30px, -50px);
 }
 
 .m .heart-container #anneira-name {
-    transform: translate(60px, 50px);
+    transform: translate(80px, 80px);
 }
 
 
@@ -144,7 +153,6 @@ body {
     font-size: 28px;
     letter-spacing: 3px;
     margin: 0;
-    transform: translate(0px, -130px);
     text-align: center;
 }
 
@@ -152,7 +160,7 @@ body {
     z-index: 2;
     position: absolute;
     left: 50%;
-    top: 90%;
+    top: 40%;
     font-family: "Signpainter", serif;
     /*color: rgb(164, 175, 143);*/
     font-size: 32px;
