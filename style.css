@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #87afb9;
+    background-color: #ffdeb2;
     padding: 0;
     margin: 0;
     display: flex;
@@ -108,6 +108,7 @@ body {
     height: 250px;
     z-index: -2;
     position: relative;
+    margin-bottom: 50px;
 }
 
 .heart {
@@ -216,6 +217,10 @@ body {
 
 .m .place-container {
     position: relative;
+}
+
+.place-container img {
+    opacity: 0.5;
 }
 
 .m .place-container img:first-child{
